@@ -1,0 +1,179 @@
+@media (max-width: 750px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .close img {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .smallCard {
+    padding: 7%;
+    margin: 12px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .smallCard img {
+    width: 55%;
+    margin-top: -3%;
+  }
+}
+
+@media (max-width: 500px) {
+  .largeCardHeader {
+    height: 48vh;
+    width: 95%;
+  }
+
+  .largeCardContents {
+    height: 58vh;
+    width: 95%;
+    padding: 30px 30px 8px 30px;
+    margin-top: -10vh;
+  }
+
+  .largeCardContents img {
+    width: 230px;
+    margin-top: -224px;
+  }
+
+  .position-responsive {
+    align-items: flex-start;
+  }
+
+  .category-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .smallCard img {
+    width: 57%;
+    margin-top: 0;
+  }
+
+  .largeCardContents img {
+    width: 190px;
+    margin-top: -190px;
+    margin-left: 20px;
+  }
+
+  .category {
+    font-size: 16px;
+    padding: 4px 8px 4px 8px;
+  }
+
+  .button-container {
+    gap: 20px;
+  }
+
+  table {
+    width: 85%;
+    margin-left: 15px;
+  }
+
+  .largeCardContents {
+    padding: 34px 30px 25px 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 15px !important;
+  }
+
+  .statsContainer {
+    gap: 5px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .smallCard {
+    padding: 5%;
+    margin: 10px;
+  }
+
+  .smallCard img {
+    width: 60%;
+    padding-left: 5px;
+  }
+
+  input {
+    min-width: 230px;
+    padding-left: 10px;
+  }
+
+  .largeInput {
+    display: none;
+  }
+
+  .smallInput {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 325px) {
+  .smallCard {
+    min-height: 200px;
+    min-width: 250px;
+  }
+
+  .largeCardContents img {
+    width: 180px;
+    margin-top: -180px;
+    margin-left: 10px;
+  }
+
+  .button-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .smallCard {
+    min-height: 180px;
+    min-width: 230px;
+  }
+
+  header h1 {
+    font-size: 36px;
+    margin-left: -3px;
+  }
+
+  header img {
+    height: 56px;
+    margin-bottom: 5px;
+  }
+
+  .largeCardContents img {
+    width: 165px;
+    margin-top: -175px;
+    margin-left: 10px;
+  }
+
+  table {
+    margin-left: 3px;
+  }
+
+  .button-container {
+    gap: 8px;
+  }
+}

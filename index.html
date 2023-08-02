@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <script defer src="pokedex-main.js"></script>
+    <script defer src="large-cards.js"></script>
+    <script defer src="html.js"></script>
+
+    <link rel="icon" href="./img/poke-icon.png" />
+  </head>
+
+  <body onload="loadPokedex()">
+    <div onclick="startLoadScreenAndAudio()" class="" id="start">
+      <button class="startButton">CLICK<br />TO START</button>
+    </div>
+
+    <div id="loadingScreen">
+      <div class="audio-btn-load">
+        <img
+          id="audioOff1"
+          onclick="stopAudio('audioOff1', 'audioOn1', 'audioOff2', 'audioOn2')"
+          class="audio"
+          src="./img/sound-off.png"
+        />
+        <img
+          id="audioOn1"
+          onclick="playAudio('audioOff1', 'audioOn1', 'audioOff2', 'audioOn2')"
+          class="d-none audio"
+          src="./img/sound-on.png"
+        />
+      </div>
+      <div class="load-animation">
+        <img class="" src="./img/pikachu-running-unscreen.gif" width="100" />
+        <p>Loading Pokémon ...</p>
+      </div>
+    </div>
+
+    <header>
+      <div onclick="location.reload()" class="logo d-flex align-center gap15">
+        <img src="./img/poke-icon.png" />
+        <h1>Pokédex</h1>
+      </div>
+      <img
+        id="audioOff2"
+        onclick="stopAudio('audioOff2', 'audioOn2')"
+        class="audio"
+        src="./img/sound-off.png"
+      />
+      <img
+        id="audioOn2"
+        onclick="playAudio('audioOff2', 'audioOn2')"
+        class="d-none audio"
+        src="./img/sound-on.png"
+      />
+
+      <div class="largeInput">
+        <input
+          id="searchPokemon1"
+          type="text"
+          oninput="filterPokemon('searchPokemon1')"
+          placeholder="Search keyword 'like' or Pokemon name..."
+        />
+        <div
+          onclick="clearSearchResults('searchPokemon1')"
+          id="clear1"
+          class="clear-results"
+        >
+          <img src="./img/close.png" />
+        </div>
+      </div>
+
+      <div class="smallInput">
+        <input
+          id="searchPokemon2"
+          type="text"
+          oninput="filterPokemon('searchPokemon2')"
+          placeholder="Search ..."
+        />
+        <div
+          onclick="clearSearchResults('searchPokemon2')"
+          id="clear2"
+          class="clear-results"
+        >
+          <img src="./img/close.png" />
+        </div>
+      </div>
+    </header>
+
+    <div id="pokedex"></div>
+    <div id="popup-container"></div>
+  </body>
+</html>
