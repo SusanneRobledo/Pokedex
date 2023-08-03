@@ -2,8 +2,8 @@ let pokedex;
 let currentPokemon;
 let allPokemon;
 let pokeID;
-offset = 0;
-limit = 30;
+let offset = 0;
+let limit = 30;
 let totalPokemonCount = 1281;
 let AUDIO_THEMESONG = new Audio("audio/pokemon-song.mp3");
 AUDIO_THEMESONG.volume = 0.15; // Audio leiser (15%)
